@@ -1,0 +1,31 @@
+FLUX and Redux
+Flux : concept : unidirectional data flow
+REDUX : library
+
+store : data repository
+tv : data
+person : component
+
+state: local
+store: global
+
+REDUX STEPS:
+1. create Actions :
+actions are functions which return a dispatcher object
+actions are related to the data changes to be done inside the store
+
+2 create reducer:
+reducers are functions which analyse the type of dispatcher & return the updated data to the store
+
+3. create store : once/application
+store is created by combining the data returned from the reducers.
+
+4 provide the store to entire application
+
+5. connecting the component to the store
+
+src
+    store
+          store.js
+          slices
+                currencySlice.js
